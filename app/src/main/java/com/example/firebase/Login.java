@@ -79,7 +79,7 @@ public class Login extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
                                     Toast.makeText(Login.this, "Login success.", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(getApplicationContext(), Chatgpt.class);
+                                    Intent intent = new Intent(getApplicationContext(), Mainscreen.class);
                                     startActivity(intent);
                                     finish();
 
