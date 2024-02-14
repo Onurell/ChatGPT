@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_xml"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="fragment_login">
+        <action
+            android:id="@+id/action_homeFragment_to_dataFragment"
+            app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.firebase.RegisterFragment"
+        tools:layout="@layout/fragment_register"
+        android:label="fragment_register"/>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.firebase.MainScreenFragment"
+        tools:layout="@layout/fragment_main_screen"
+        android:label="fragment_main_screen">
+        <action
+            android:id="@+id/action_mainScreenFragment_to_chatgptFragment"
+            app:destination="@id/chatgptFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatgptFragment"
+        android:name="com.example.firebase.ChatgptFragment"
+        tools:layout="@layout/fragment_chatgpt"
+        android:label="fragment_chatgpt"/>
+</navigation>
