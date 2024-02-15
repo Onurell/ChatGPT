@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_1"
     android:gravity="center"
-    tools:context=".Register"
     android:padding="15dp"
     android:orientation="vertical">
 
+
+
     <TextView
-        android:text="@string/register"
+        android:text="@string/login"
         android:textSize="20dp"
         android:textColor="@color/white"
+
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginBottom="20dp"
@@ -53,30 +54,28 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <ProgressBar
-        android:id="@+id/progressbar"
+        android:id="@+id/Progressbar"
         android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/btn_register"
-        android:text="REGISTER"
+        android:id="@+id/btn_login"
+        android:text="LOGIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    
+
     <TextView
         android:textStyle="bold"
         android:textSize="20dp"
+
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:text="CLICK TO LOGIN"
-        android:id="@+id/loginNow"
+        android:id="@+id/RegisterNow"
+        android:text="CLICK TO REGISTER"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    </LinearLayout>
 
 
-
-
-
-</LinearLayout>
