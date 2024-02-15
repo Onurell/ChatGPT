@@ -24,7 +24,7 @@ class MainScreenFragment : Fragment() {
         val chatgpt = view.findViewById<CardView>(R.id.chatgpt)
 
         chatgpt.setOnClickListener {
-            findNavController().navigate(R.id.action_mainScreenFragment_to_chatgptFragment)
+
         }
     }
 }

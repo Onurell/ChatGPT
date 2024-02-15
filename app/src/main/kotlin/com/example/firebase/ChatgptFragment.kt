@@ -89,7 +89,7 @@ class ChatgptFragment : Fragment() {
         val body = RequestBody.create("application/json".toMediaTypeOrNull(), jsonBody.toString())
         val request = Request.Builder()
             .url("https://api.openai.com/v1/completions")
-            .header("Authorization", "Bearer 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")
+            .header("Authorization", "Bearer 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")
             .post(body)
             .build()
 

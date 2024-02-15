@@ -43,7 +43,7 @@ class RegisterFragment : Fragment() {
 
         val loginNow = view.findViewById<TextView>(R.id.loginNow)
         loginNow.setOnClickListener {
-            findNavController().navigate(R.id.action_dataFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
         }
     }
 
@@ -64,7 +64,7 @@ class RegisterFragment : Fragment() {
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
             if (it.isSuccessful) {
                 Toast.makeText(requireContext(), "Authentication Success.", Toast.LENGTH_SHORT).show()
-                findNavController().navigate(R.id.action_dataFragment_to_homeFragment)
+                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
             } else {
                 Toast.makeText(requireContext(), "Authentication failed.", Toast.LENGTH_SHORT).show()
             }

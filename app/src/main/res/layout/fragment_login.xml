@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    android:gravity="center"
+    android:padding="15dp"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/img_1"
-        android:gravity="center"
-        tools:context=".Register"
-        android:padding="15dp"
-        android:orientation="vertical">
+
 
     <TextView
         android:text="@string/login"
@@ -82,4 +79,3 @@
     </LinearLayout>
 
 
-</FrameLayout>

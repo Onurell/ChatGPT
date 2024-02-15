@@ -10,9 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.firebase.MainScreenFragment
 import com.example.firebase.R
-import com.example.firebase.RegisterFragment
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 
@@ -40,7 +38,7 @@ class LoginFragment : Fragment() {
 
         val textView = view.findViewById<TextView>(R.id.RegisterNow)
         textView.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_dataFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
         }
 
         return view
@@ -68,7 +66,7 @@ class LoginFragment : Fragment() {
                 progressBar?.visibility = View.GONE
                 if (task.isSuccessful) {
                     Toast.makeText(requireContext(), "Login success.", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_homeFragment_to_mainScreenFragment)
+                    findNavController().navigate(R.id.action_loginFragment_to_chatgptFragment)
                 } else {
                     Toast.makeText(requireContext(), "Login failed.", Toast.LENGTH_SHORT).show()
                 }
